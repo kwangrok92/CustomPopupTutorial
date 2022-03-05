@@ -27,22 +27,22 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요! 김광록입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEv-F8-lYe">
-                                        <rect key="frame" x="37" y="187" width="176" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="57.5" y="187" width="135.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="재미있는 스위프트 시작!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgc-fo-Fei">
-                                        <rect key="frame" x="44.5" y="218" width="161" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="63" y="213" width="124" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVJ-MV-g0e">
-                                        <rect key="frame" x="65" y="254" width="120" height="31"/>
+                                        <rect key="frame" x="60" y="254" width="130" height="31"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="C59-gr-EAu"/>
+                                            <constraint firstAttribute="width" constant="130" id="C59-gr-EAu"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="시작하러 가기!">
