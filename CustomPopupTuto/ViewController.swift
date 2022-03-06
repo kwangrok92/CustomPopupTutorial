@@ -26,14 +26,20 @@ class ViewController: UIViewController {
         let storyboard = UIStoryboard.init(name: "Popup", bundle: nil)
         
         // 스토리보드를 통해 뷰컨트롤러 가져오기
-        let alertPopupVC = storyboard.instantiateViewController(withIdentifier: "AlertPopupVC")
+        let customPopupVC = storyboard.instantiateViewController(withIdentifier: "AlertPopupVC") as! CustomPopupViewController
         
         // 뷰컨트롤러가 보여지는 스타일
-        alertPopupVC.modalPresentationStyle = .overCurrentContext
+        customPopupVC.modalPresentationStyle = .overCurrentContext
         // 뷰컨트롤러가 사라지는 스타일
-        alertPopupVC.modalTransitionStyle = .crossDissolve
+        customPopupVC.modalTransitionStyle = .crossDissolve
         
-        self.present(alertPopupVC, animated: true, completion: nil)
+        customPopupVC.goToStartBtnCompletionClosure = {
+            print("컴플레션 블럭이 호출되었다.")
+            let myBlogUrl = URL(string: "https://www.youtube.com")
+            self.myWebView.load(URLRequest(url: myBlogUrl!))
+        }
+        
+        self.present(customPopupVC, animated: true, completion: nil)
         
     }
 }

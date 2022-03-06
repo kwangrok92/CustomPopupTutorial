@@ -16,6 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAC-xs-VSw" userLabel="BG Btn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="onBgBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Ow8-b2-5pw"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzb-dq-GMf" userLabel="ContentView">
                                 <rect key="frame" x="82" y="298" width="250" height="300"/>
                                 <subviews>
@@ -48,6 +57,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="시작하러 가기!">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onGoToStartBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="P3M-3L-Ja3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,24 +76,23 @@
                                     <constraint firstAttribute="width" constant="250" id="wE7-so-fnK"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAC-xs-VSw" userLabel="BG Btn">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.65268920068027214" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="kAC-xs-VSw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="AB3-cs-nI3"/>
+                            <constraint firstItem="kAC-xs-VSw" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="7Ax-Nc-c0J"/>
                             <constraint firstItem="nzb-dq-GMf" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="AoI-Ke-GwA"/>
-                            <constraint firstItem="kAC-xs-VSw" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="JI1-0U-6rU"/>
-                            <constraint firstItem="kAC-xs-VSw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Qy6-Jt-aat"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="kAC-xs-VSw" secondAttribute="bottom" id="dpK-bk-vJR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="kAC-xs-VSw" secondAttribute="bottom" id="DR1-s5-Vrr"/>
+                            <constraint firstItem="kAC-xs-VSw" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="VFF-PJ-6Ib"/>
                             <constraint firstItem="nzb-dq-GMf" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="k0i-HX-hvZ"/>
+                            <constraint firstItem="kAC-xs-VSw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="uIY-WK-pda"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgBtn" destination="kAC-xs-VSw" id="9Sv-Aw-gt4"/>
+                        <outlet property="contentView" destination="nzb-dq-GMf" id="K0z-v8-ub7"/>
+                        <outlet property="goToStartBtn" destination="XVJ-MV-g0e" id="wr5-Z6-7Ye"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
