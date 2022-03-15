@@ -16,6 +16,7 @@
 		1B3D8E6E27D23F0B00183E6E /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3D8E6D27D23F0B00183E6E /* Popup.storyboard */; };
 		1B3D8E7027D2454700183E6E /* CustomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D8E6F27D2454700183E6E /* CustomPopupViewController.swift */; };
 		1B3D8E7327D2492400183E6E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3D8E7227D2492400183E6E /* WebKit.framework */; };
+		1BF0301527E0244C0038C31C /* PopupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0301427E0244C0038C31C /* PopupDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1B3D8E6D27D23F0B00183E6E /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
 		1B3D8E6F27D2454700183E6E /* CustomPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupViewController.swift; sourceTree = "<group>"; };
 		1B3D8E7227D2492400183E6E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1BF0301427E0244C0038C31C /* PopupDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				1B3D8E5927D23DD400183E6E /* AppDelegate.swift */,
 				1B3D8E5B27D23DD400183E6E /* SceneDelegate.swift */,
+				1BF0301427E0244C0038C31C /* PopupDelegate.swift */,
 				1B3D8E5D27D23DD400183E6E /* ViewController.swift */,
 				1B3D8E6F27D2454700183E6E /* CustomPopupViewController.swift */,
 				1B3D8E5F27D23DD400183E6E /* Main.storyboard */,
@@ -160,6 +163,7 @@
 				1B3D8E7027D2454700183E6E /* CustomPopupViewController.swift in Sources */,
 				1B3D8E5E27D23DD400183E6E /* ViewController.swift in Sources */,
 				1B3D8E5A27D23DD400183E6E /* AppDelegate.swift in Sources */,
+				1BF0301527E0244C0038C31C /* PopupDelegate.swift in Sources */,
 				1B3D8E5C27D23DD400183E6E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
