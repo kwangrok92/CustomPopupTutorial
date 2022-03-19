@@ -48,16 +48,30 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uUF-gA-O4K">
-                                        <rect key="frame" x="55" y="300" width="140" height="72"/>
+                                        <rect key="frame" x="55" y="259" width="140" height="113"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVj-DZ-gh5">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuQ-XR-CAa">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="31"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="mKn-XE-OKA"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="블로그 가기">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onBlogBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="imX-zQ-drv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVj-DZ-gh5">
+                                                <rect key="frame" x="0.0" y="41" width="140" height="31"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="140" id="uUh-vu-zu2"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="오픈카톡방 가기">
+                                                <buttonConfiguration key="configuration" style="plain" title="구글 사이트 가기">
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -65,7 +79,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVJ-MV-g0e">
-                                                <rect key="frame" x="0.0" y="41" width="140" height="31"/>
+                                                <rect key="frame" x="0.0" y="82" width="140" height="31"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="140" id="C59-gr-EAu"/>
@@ -109,6 +123,7 @@
                     </view>
                     <connections>
                         <outlet property="bgBtn" destination="kAC-xs-VSw" id="9Sv-Aw-gt4"/>
+                        <outlet property="blogBtn" destination="IuQ-XR-CAa" id="scT-MC-c8O"/>
                         <outlet property="contentView" destination="nzb-dq-GMf" id="K0z-v8-ub7"/>
                         <outlet property="goToStartBtn" destination="XVJ-MV-g0e" id="wr5-Z6-7Ye"/>
                         <outlet property="openChatBtn" destination="wVj-DZ-gh5" id="MXB-Oe-97Y"/>
@@ -126,6 +141,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

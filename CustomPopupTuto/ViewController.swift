@@ -8,13 +8,31 @@
 import UIKit
 import WebKit
 
+let notificationName = "btnClickNotification"
+
 class ViewController: UIViewController, PopupDelegate {
 
     @IBOutlet weak var myWebView: WKWebView!
     @IBOutlet weak var CreatePopupBtn: UIButton!
+    
+    deinit{
+        NotificationCenter.default.removeObserver(self)  // 메모리에서 해제를 해줘야한다..(?) 
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // 노티피케이션이라는 방송 수신기를 장착한다.
+        NotificationCenter.default.addObserver(self, selector: #selector(LoadWebView), name: NSNotification.Name(rawValue: notificationName), object: nil)
+    }
+    
+    @objc fileprivate func LoadWebView(){
+        print("ViewController - LoadWebView() is called")
+        
+        let myBlogUrl = URL(string: "https://crazydeer.tistory.com")
+        self.myWebView.load(URLRequest(url: myBlogUrl!))
     }
 
 
